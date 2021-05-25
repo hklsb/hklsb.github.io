@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <style>
+      body {
+        padding: 1em 1em 8em;
+      }
+      code {
+        /* background: rgb(32, 32, 32);
+        padding: 0.5em 1em;
+        color: rgb(255, 255, 255) !important; */
+      }
+      ::selection {
+        background: red;
+        color: white;
+        padding: 1em;
+        line-height: 1;
+      }
+
+      li {
+        margin: 1em;
+      }
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+
+    <title>PHP Notes</title>
+  </head>
+  <body class="bg-dark text-white">
+    <div class="container">
+      <h1 class="text-center">PHP Notes</h1>
+      <ul>
+        <li>
+          <p>Length of string:  <pre class="bg-light py-2 px-3 text-danger">strlen("Hello");</pre></p>
+        </li>
+        <li>
+          <p>Length of arrays:  <pre class="bg-light py-2 px-3 text-danger">count($array);</pre></p>
+        </li>
+        <li>
+          <p>
+            Associative arrays:
+            <pre class="bg-light py-2 px-3 text-danger"
+              >$age = array("Ben"=>"32","David"=>"28","Jessica"=>"17");</pre
+            >
+          </p>
+          <p>Accessing arrays:  <pre class="bg-light py-2 px-3 text-danger">$age["David"] <span class="text-success">// returns 28</span></pre></p>
+        </li>
+        <li>
+          <p>Looping through arrays</p>
+          <pre class="bg-light py-2 px-3 text-danger">
+foreach ($color as $x) { 
+  echo $x <span class="text-success">// will return the keys</span>
+} </pre
+          >
+        </li>
+        <li>
+          <p>Looping through arrays Output keys and values</p>
+          <pre class="bg-light py-2 px-3 text-danger">
+foreach ($color as $x => $y) { 
+  echo "Key=" . $x . ", Value=" . $y; 
+} </pre
+          >
+        </li>
+        <li>
+          <p>Sort Arrays alphabetically</p>
+          <pre class="bg-light py-2 px-3 text-danger">
+$colors = array("red", "green", "blue", "yellow"); 
+sort($colors); </pre
+          >
+        </li>
+        <li>
+          <p>Sort Arrays descending alphabetically.</p>
+          <pre class="bg-light py-2 px-3 text-danger">
+$colors = array("red", "green", "blue", "yellow"); 
+rsort($colors); <span class="text-success">// rsort()</span> </pre
+          >
+        </li>
+        <li>
+          <p>sort the $age array according to the values.</p>
+          <pre class="bg-light py-2 px-3 text-danger">
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+asort($age); </pre
+          >
+        </li>
+        <li>
+          <p>sort the $age array according to the values.</p>
+          <pre class="bg-light py-2 px-3 text-danger">
+&lt;?php
+echo "Today is " . date("Y/m/d") . "&lt;br&gt;";<span class="text-success"> //Today is 2019/01/24</span>
+echo "Today is " . date("Y.m.d") . "&lt;br&gt;";<span class="text-success"> //Today is 2019.01.24</span>
+echo "Today is " . date("Y-m-d") . "&lt;br&gt;";<span class="text-success"> //Today is 2019-01-24</span>
+echo "Today is " . date("l");<span class="text-success"> //Today is Thursday</span>
+echo "The time is " . date("h:i:s");<span class="text-success"> //The time is 03:50:33am</span>
+?&gt;</pre
+          >
+        </li>
+        <li>
+          <p>to include a file named "footer.php".</p>
+          <pre class="bg-light py-2 px-3 text-danger">
+&lt;?php include 'footer.php'; ?&gt;</pre
+          >
+        </li>
+        <li>
+          <p>we have a file named "webdict.txt", write the correct syntax to open and read the file content.</p>
+          <pre class="bg-light py-2 px-3 text-danger">
+&lt;?php echo readfile("webdict.txt"); ?&gt;</pre
+          >
+        </li>
+        <li>
+          <p>Create a cookie named "username".</p>
+          <pre class="bg-light py-2 px-3 text-danger">
+&lt;?php setcookie("username", "John", time() + (86400 * 30), "/"); ?&gt;</pre
+          >
+        </li>
+        <li>
+          <p>Create a session variable named "favcolor".</p>
+          <pre class="bg-light py-2 px-3 text-danger">
+&lt;?php $_SESSION["favcolor"] = "green"; ?&gt;</pre
+          >
+        </li>
+        <li>
+          <p>Output the value of the session variable "favcolor".</p>
+          <pre class="bg-light py-2 px-3 text-danger">
+&lt;?php echo $_SESSION["favcolor"] ?&gt;</pre
+          >
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
