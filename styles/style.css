@@ -3,7 +3,31 @@ body {
     overflow: auto;
     margin: 0;
     padding: 0;
+    font-size: 20px;
 }
+
+/* Utility */
+ h1,h2,h3,h4,h5,h6,p,span,div {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(172, 236, 69);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+}
+
+/* navigation */
 
 nav {
     background-color: rgb(6, 15, 138);
@@ -14,22 +38,19 @@ nav {
 
 nav ul {
     display: flex;
-    justify-content: flex-end;
-    list-style-type: none;
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 nav li a {
-    padding: 12px 20px;
-    text-decoration: none;
+    padding: 0.8rem 1rem;
 }
 
 nav li a:hover {
     background-color: rgb(0, 255, 255);
     color: rgb(6, 15, 138);
 }
+
+/* main */
 
 main {
     display: flex;
@@ -43,34 +64,22 @@ main {
     padding: 0;
 }
 
-h1 {
-    margin-top: 0;
-    padding: 0;
-}
-
-main h1 {
-    font-size: 16px;
-    color:rgb(0, 245, 0);
-}
-
-a {
-    text-decoration: none;
-    color: rgb(0, 255, 255);
-}
-
-li {
-    display: flex;
-}
-
+/* person block */
 .person {
     background-color: rgb(4, 76, 117);
-    background-image: linear-gradient(180deg,rgb(4, 76, 117),rgb(60, 84, 99));
-    border-radius: 25px;
+    background-image: linear-gradient(120deg,rgb(4, 76, 117),rgb(38, 53, 63));
+    border-radius: 1.2rem;
     display: flex;
     flex-direction: column;
     width: auto;
-    margin: 20px;
-    padding: 25px;
+    margin: 1.5rem;
+    padding: 1.2rem 1.8rem;
+}
+
+.img_container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .img_container img {
@@ -79,14 +88,20 @@ li {
 
 .info_container {
     color: wheat;
-    margin-left: 20px;
 }
 
-/* 481px and above 
- * For bigger screen
- */
+/* For bigger screen */
 
 @media screen and (min-width: 780px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+    }
+
     main {
         width: 100%;
         height: 960px;
@@ -98,5 +113,9 @@ li {
         height: auto;
         margin: 20px;
         padding: 25px;
+    }
+
+    .info_container {
+        margin-left: 20px;
     }
   }
