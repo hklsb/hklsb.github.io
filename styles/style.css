@@ -92,6 +92,44 @@ main {
 
 /* For bigger screen */
 
+@media screen and (min-width: 479px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    main {
+        width: 100%;
+        height: 960px;
+    }
+    
+    .person {
+        flex-direction: row;
+        max-width: 680px;
+        height: auto;
+        margin: 20px;
+        padding: 25px;
+    }
+
+    .img_container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img_container img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .info_container {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+    }
+}
+
+
+/* For bigger screen */
 @media screen and (min-width: 780px) {
 
     body {
@@ -106,16 +144,13 @@ main {
         width: 100%;
         height: 960px;
     }
-    
-    .person {
-        flex-direction: row;
-        width: 680px;
-        height: auto;
-        margin: 20px;
-        padding: 25px;
+
+    .img_container img {
+        width: 180px;
+        height: 180px;
     }
 
     .info_container {
         margin-left: 20px;
     }
-  }
+}
