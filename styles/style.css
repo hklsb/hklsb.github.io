@@ -8,3 +8,31 @@ body {
 a {
     color: gold;
 }
+
+li {
+    background: coral;
+    padding: 20px;
+}
+
+nav ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+.person {
+    display: flex;
+    width: 680px;
+    height: auto;
+}
+
+.info_container {
+    color: wheat;
+    margin-left: 8px;
+}
