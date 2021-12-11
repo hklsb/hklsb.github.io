@@ -1,40 +1,8 @@
 body {
+    min-width: 360px;
+    overflow: auto;
     margin: 0;
     padding: 0;
-    /* background-color: cornflowerblue; */
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    background-image: url("../images/thecapitol.jpg");
-    background-color: cornflowerblue;
-    width: 100%;
-    height: 960px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    margin-top: 0;
-    padding: 0;
-}
-
-main h1 {
-    font-size: 16px;
-    color:rgb(0, 245, 0);
-}
-
-a {
-    text-decoration: none;
-    color: rgb(0, 255, 255);
-}
-
-li {
-    display: flex;
 }
 
 nav {
@@ -63,13 +31,44 @@ nav li a:hover {
     color: rgb(6, 15, 138);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/thecapitol.jpg");
+    background-color: cornflowerblue;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 0;
+    padding: 0;
+}
+
+main h1 {
+    font-size: 16px;
+    color:rgb(0, 245, 0);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 255, 255);
+}
+
+li {
+    display: flex;
+}
+
 .person {
     background-color: rgb(4, 76, 117);
     background-image: linear-gradient(180deg,rgb(4, 76, 117),rgb(60, 84, 99));
     border-radius: 25px;
     display: flex;
-    width: 680px;
-    height: auto;
+    flex-direction: column;
+    width: auto;
     margin: 20px;
     padding: 25px;
 }
@@ -83,24 +82,21 @@ nav li a:hover {
     margin-left: 20px;
 }
 
-/*
- * for phone
+/* 481px and above 
+ * For bigger screen
  */
-@media only screen and (max-width: 600px) {
 
+@media screen and (min-width: 780px) {
     main {
-        display: flex;
-        flex-direction: column;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 0;
-        padding: 0;
+        width: 100%;
+        height: 960px;
     }
-
+    
     .person {
-        display: flex;
-        flex-direction: column;
-        width: auto;
+        flex-direction: row;
+        width: 680px;
+        height: auto;
+        margin: 20px;
+        padding: 25px;
     }
-}
+  }
