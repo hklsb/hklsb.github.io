@@ -1,9 +1,11 @@
+/* For screen below 480px */
 body {
     min-width: 360px;
     overflow: auto;
     margin: 0;
     padding: 0;
     font-size: 20px;
+    background-color: antiquewhite;
 }
 
 /* Utility */
@@ -90,6 +92,32 @@ main {
     color: wheat;
 }
 
+
+h1 {
+    margin: 30px;
+}
+
+.page {
+    background-color: rgb(127, 171, 209);
+    max-width: 680px;
+}
+
+.box {
+    padding: 20px 40px;
+}
+
+.box h3 {
+    background-color: antiquewhite;
+    width: 400px;
+    padding: 10px 20px;
+    margin: 20px 0;
+    box-shadow: 0 20 20 0 rgba(233, 0, 0, 50);
+}
+
+j.box ul li {
+    margin-bottom: 20px;
+}
+
 /* For bigger screen */
 
 @media screen and (min-width: 479px) {
@@ -131,6 +159,9 @@ main {
 
 /* For bigger screen */
 @media screen and (min-width: 780px) {
+
+    
+    
 
     body {
         font-size: 18px;
