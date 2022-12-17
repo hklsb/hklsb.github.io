@@ -6,6 +6,10 @@ body {
     
 }
 
+ul {
+    list-style-type: none;
+}
+
 .box-cover {
     min-width: 460px;
     max-width: 1080px;
@@ -21,6 +25,31 @@ a:link, a:visited {
     color: #ffffff;
     text-decoration: none;
 }
+
+
+/* Navigation bar */
+
+nav {
+    display: flex;
+    background-color: #af6729;
+    height: 4em;
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav li a {
+    padding: 1.5em;
+    color: #ffeb00;
+}
+
+nav ul li a:hover {
+    color: #ffeb00;
+}
+
+/* end of Navigation bar */
 
 .title-container {
     display: flex;
@@ -45,6 +74,12 @@ a:link, a:visited {
     background-color: antiquewhite;
 }
 
+.block2-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .block-3 {
     background-color: rgb(255, 132, 132);
 }
@@ -67,6 +102,8 @@ a:link, a:visited {
 .box .img {
     max-width: 100%;
     display: flex;
+    margin: 0;
+    padding: 0;
     justify-content: center;
 }
 
