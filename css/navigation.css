@@ -1,0 +1,19 @@
+
+/* Styles for Single Level Menu */
+
+@media screen and (min-width: 30em) {
+
+ 
+    .single_nav ul {
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .single_nav li {
+        flex: 1 0 auto;
+        text-align: center;
+    }
+    
+}

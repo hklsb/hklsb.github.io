@@ -1,0 +1,45 @@
+/* Rules */
+
+.rules {
+    background: url("/images/christmas.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    min-height: 576px;
+
+}
+
+.rules_cover {
+    background-color: rgb(240, 240, 240);
+    padding: 2em;
+}
+
+.rules_text {
+    display: block;
+    max-width: 976px;
+    min-height: 480px;
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+}
+
+.rules_text h3 {
+    padding: 1em 0;
+}
+
+.rules_text a {
+    display: flex;
+    width: 80px;
+    ;
+    color: rgb(255, 255, 255);
+    padding: .5em 1em;
+    background: blue;
+    border-radius: .3em;
+}
+
+.rules_text a:hover {
+    background: white;
+    color: blue;
+}
+
+
+/* End of Rules */

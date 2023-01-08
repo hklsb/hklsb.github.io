@@ -1,0 +1,36 @@
+/* Contact */
+
+.contact {
+    display: flex;
+    align-items: flex-end;
+    font-weight: 600;
+    background: url(/images/lionsclub.jpg) no-repeat;
+    background-size: cover;
+    min-height: 769px;
+    color: #000000;
+    background-position-y: 80%;
+}
+
+.contact_cover {
+    width: 100%;
+    min-height: 480px;
+    background-color: #00000000;
+}
+
+.contact_text {
+    max-width: 976px;
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.contact_text h3 {
+    margin: 2em 0;
+}
+
+.contact_text a {
+    color: rgb(9, 89, 238);
+    font-weight: 400;
+}
+
+/* End of Contact */

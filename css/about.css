@@ -1,0 +1,29 @@
+/* About */
+
+.about {
+    background: url(/images/swimming.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 576px;
+    display: flex;
+    align-items: flex-end;
+    color: black;
+}
+
+.main {
+    background: linear-gradient(1deg, #00000085, transparent);
+    color: rgb(255, 255, 255);
+    width: 100%;
+
+}
+
+.about_text {
+    max-width: 978px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.main h3 {
+    color: #c5e562;
+}
+
+/* End of About */
