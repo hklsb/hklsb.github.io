@@ -1,19 +1,25 @@
-
 /* Styles for Single Level Menu */
+.single_nav {
+    /* width: 100%; */
+    background-color: #404040;
+}
+
+
 
 @media screen and (min-width: 30em) {
 
- 
+
     .single_nav ul {
-        
+        max-width: 960px;
+        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    
+
     .single_nav li {
         flex: 1 0 auto;
         text-align: center;
     }
-    
+
 }

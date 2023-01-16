@@ -5,6 +5,7 @@
 .centered {
     max-width: 967px;
     margin: 0 auto;
+    padding-top: 1em;
 }
 
 figure {
