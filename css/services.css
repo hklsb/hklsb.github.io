@@ -1,45 +1,57 @@
-/* Rules */
-
-.rules {
-    background: url("/images/santorini_greece.jpg") no-repeat center;
+.col_section {
+    min-height: 1200px;
+    background: url(/images/timothy.jpg) scroll no-repeat center;
     background-size: cover;
-    display: flex;
-    align-items: flex-end;
-    min-height: 576px;
-
 }
 
-.rules_cover {
-    background-color: rgb(240, 240, 240);
+.col {
+    width: 400px;
+    min-height: 700px;
+    margin-left: 120px;
     padding: 2em;
+    background: linear-gradient(to bottom, rgb(236, 236, 236),rgb(209, 207, 72));
 }
 
-.rules_text {
-    display: block;
-    max-width: 976px;
-    min-height: 480px;
+.col h1, .col h3 {
+    color: rgb(5, 58, 107);
+    line-height: 1;
+}
+
+.footer {
+    background: rgb(214, 214, 214);
+}
+
+.website, .contact_num {
+    max-width: 960px;
     margin: 0 auto;
-    color: rgb(0, 0, 0);
 }
 
-.rules_text h3 {
-    padding: 1em 0;
-}
-
-.rules_text a {
+.website ul, .website ul ul {
     display: flex;
-    width: 80px;
-    ;
-    color: rgb(255, 255, 255);
-    padding: .5em 1em;
-    background: blue;
-    border-radius: .3em;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    gap: 1em;
+    padding: 1em;
+    justify-content: space-between;
 }
 
-.rules_text a:hover {
-    background: white;
-    color: blue;
+.website li, .website li a {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 
+.website img {
+    width: 30px;
+}
 
-/* End of Rules */
+.website span {
+    align-self: center;
+}
+
+.contact_num {
+    padding: 0 2em;
+    color: rgb(5, 58, 107);
+    font-weight: 600;
+}
