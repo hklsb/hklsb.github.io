@@ -40,20 +40,6 @@ header img {
     text-align: center;
 }
 
-a {
-    text-decoration: none;
-    padding: 1em;
-    background-color: blueviolet;
-    color: white;
-    transition: color .5s;
-}
-
-a:hover {
-    background-color: rgb(216, 214, 214);
-    color: blueviolet;
-    transition: color .5s;
-}
-
 .product_container {
     display: flex;
     flex-wrap: wrap;
@@ -69,10 +55,18 @@ a:hover {
 }
 
 .product a {
+    text-decoration: none;
+    padding: 1em;
+    background-color: blueviolet;
+    color: white;
+    transition: color .5s;
     transition: transform 1s;
 }
 
 .product a:hover {
+    background-color: rgb(216, 214, 214);
+    color: blueviolet;
+    transition: color .5s;
     transform: rotate(.05turn);
     transition: transform 1s;
 }
