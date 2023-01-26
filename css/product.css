@@ -49,16 +49,19 @@ header img {
 .product {
     display: flex;
     width: 250px;
-    background-color: gainsboro;
-    /* border: 1px solid red; */
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.217);
+    box-sizing: border-box;
+}
+
+.product figure {
+    display: flex;
+    justify-content: center;
 }
 
 .product a {
     text-decoration: none;
-    padding: 1em;
     background-color: blueviolet;
     color: white;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.217);
     transition: color .5s;
     transition: transform 1s;
 }
@@ -73,9 +76,11 @@ header img {
 
 .product_detail {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
     padding: 1em;
+}
+
+.product_name {
+    margin-left: 15px;
 }
 
 .product_name h4 {
@@ -83,6 +88,8 @@ header img {
 }
 
 .price {
+    height: fit-content;
+    font-size: 0.8em;
     font-weight: 600;
     border: 1px solid red;
     background-color: brown;
@@ -92,11 +99,11 @@ header img {
     color: white;
 }
 
-.price p {
+.price p, .product_name p {
     margin: 0;
 }
 
 .price_value {
     margin-left: .1em;
-    font-size: 3em;
+    font-size: 2em;
 }

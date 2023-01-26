@@ -8,8 +8,8 @@ const product = document.querySelector(".product");
 icon.addEventListener("click",callMe);
 h1.addEventListener("mouseenter",changeText);
 h1.addEventListener("mouseleave",changeTextAgain);
-product.addEventListener("mouseenter",priceIncrease);
-product.addEventListener("mouseleave",priceNormal);
+// product.addEventListener("mouseenter",priceIncrease);
+// product.addEventListener("mouseleave",priceNormal);
 
 
 const mobile = 640;
